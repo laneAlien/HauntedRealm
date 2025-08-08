@@ -1,0 +1,48 @@
+Create a mobile-first dark fantasy NFT web application called **"Haunted Realm"**, inspired by Halloween and gothic RPG themes. The app should immerse users in a spooky metaverse where they collect and interact with unique NFT character cards on the **TON blockchain**. Use a responsive, animated interface with eerie ambiance, fitting for a chilling collectible experience.
+
+🎯 Features to include:
+
+1. **Landing Page:**
+   - Immersive Halloween/RPG atmosphere (dark theme, spooky UI, animated fog, ambient music optional).
+   - Tagline: *"Start Your Spooky NFT Adventure Today!"*
+   - Button: “Connect TON Wallet” (TON Keeper integration or mock it initially).
+   - Brief intro to the Haunted Realm universe.
+
+2. **NFT Viewer Dashboard:**
+   - Show owned character cards with art, name, rarity level, mana type, and abilities.
+   - Sort/filter by rarity, faction, synergy tags, and customization level.
+   - Display NFT metadata dynamically (can be mocked).
+
+3. **Card Details Page:**
+   - Show 3D or animated preview of each card (mock/placeholder ok).
+   - Tabs for: Abilities, Enhancements, Interactions.
+   - Option to “Equip” or “Enhance” (mock logic).
+
+4. **Wallet Dashboard:**
+   - Show wallet balance, recent NFT transactions, and estimated card value.
+   - Analytics: NFT usage stats, card power score, rarity insights.
+
+5. **Deck Builder Interface:**
+   - Drag-and-drop deck builder with synergy highlights.
+   - Show stats like average mana cost, synergy percentage, total power.
+
+6. **Event System:**
+   - Calendar view for seasonal events (e.g., Halloween tournament, winter ghost challenge).
+   - Event-specific card packs and reward system (mocked).
+
+7. **Leaderboard and Rewards:**
+   - Global leaderboard with ranks, rewards, and profile badges.
+
+8. **Tech requirements:**
+   - Use **React + TypeScript + TailwindCSS**
+   - Support mobile-first UX with PWA support (optional).
+   - Optional: Use Replit DB or Firebase for mock data.
+   - Structure the app to allow future real integration with TON blockchain.
+
+💡 Design direction:
+- Use gothic typefaces, shadowed UI components, glows, and smooth transitions.
+- Imagine a "haunted castle meets mobile web3" vibe.
+- Optional elements: fog overlays, dark ambient background music toggle, card flip animations.
+
+The app should feel like a mix between **Darkest Dungeon**, **Clash Royale**, and **Magic: The Gathering**, reimagined for web3 with spooky energy.
+
