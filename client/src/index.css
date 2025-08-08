@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Spectral:wght@300;400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(240, 46%, 6%);
+  --foreground: hsl(208, 13%, 91%);
+  --card: hsl(239, 55%, 11%);
+  --card-foreground: hsl(0, 0%, 85%);
+  --popover: hsl(240, 46%, 6%);
+  --popover-foreground: hsl(208, 13%, 91%);
+  --primary: hsl(258, 54%, 64%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(207, 15%, 95%);
+  --secondary-foreground: hsl(210, 25%, 8%);
+  --muted: hsl(0, 0%, 9%);
+  --muted-foreground: hsl(210, 4%, 46%);
+  --accent: hsl(245, 70%, 8%);
+  --accent-foreground: hsl(258, 88%, 53%);
+  --destructive: hsl(356, 91%, 54%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(210, 5%, 15%);
+  --input: hsl(208, 28%, 18%);
+  --ring: hsl(203, 89%, 53%);
+  --chart-1: hsl(204, 88%, 53%);
+  --chart-2: hsl(160, 100%, 36%);
+  --chart-3: hsl(42, 93%, 56%);
+  --chart-4: hsl(147, 79%, 42%);
+  --chart-5: hsl(341, 75%, 51%);
+  --sidebar: hsl(239, 55%, 11%);
+  --sidebar-foreground: hsl(0, 0%, 85%);
+  --sidebar-primary: hsl(203, 89%, 53%);
+  --sidebar-primary-foreground: hsl(0, 0%, 100%);
+  --sidebar-accent: hsl(245, 70%, 8%);
+  --sidebar-accent-foreground: hsl(258, 88%, 53%);
+  --sidebar-border: hsl(206, 16%, 26%);
+  --sidebar-ring: hsl(203, 89%, 53%);
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Spectral', serif;
+  --font-cinzel: 'Cinzel', serif;
+  --font-mono: 'Menlo', monospace;
+  --radius: 1.3rem;
+  
+  /* Twilight color palette */
+  --twilight-900: hsl(240, 46%, 6%);
+  --twilight-800: hsl(239, 55%, 11%);
+  --twilight-700: hsl(243, 32%, 18%);
+  --twilight-600: hsl(245, 23%, 29%);
+  --twilight-500: hsl(247, 43%, 64%);
+  --twilight-400: hsl(250, 44%, 72%);
+  --twilight-300: hsl(252, 44%, 72%);
+  --twilight-200: hsl(254, 40%, 80%);
+  --twilight-100: hsl(256, 25%, 84%);
+  
+  /* Moonlight colors */
+  --moonlight-100: hsl(208, 13%, 98%);
+  --moonlight-200: hsl(210, 13%, 93%);
+  --moonlight-300: hsl(212, 13%, 87%);
+  --moonlight-400: hsl(214, 13%, 81%);
+  --moonlight-500: hsl(216, 13%, 69%);
+  --moonlight-600: hsl(218, 13%, 42%);
+  
+  /* Lavender colors */
+  --lavender-100: hsl(253, 100%, 98%);
+  --lavender-200: hsl(249, 100%, 95%);
+  --lavender-300: hsl(249, 100%, 89%);
+  --lavender-400: hsl(249, 95%, 83%);
+  --lavender-500: hsl(250, 95%, 76%);
+  --lavender-600: hsl(251, 95%, 70%);
+  --lavender-700: hsl(253, 95%, 60%);
+  --lavender-800: hsl(255, 95%, 52%);
+}
+
+.dark {
+  --background: hsl(240, 46%, 6%);
+  --foreground: hsl(208, 13%, 91%);
+  --card: hsl(239, 55%, 11%);
+  --card-foreground: hsl(0, 0%, 85%);
+  --popover: hsl(240, 46%, 6%);
+  --popover-foreground: hsl(208, 13%, 91%);
+  --primary: hsl(258, 54%, 64%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(207, 15%, 95%);
+  --secondary-foreground: hsl(210, 25%, 8%);
+  --muted: hsl(0, 0%, 9%);
+  --muted-foreground: hsl(210, 4%, 46%);
+  --accent: hsl(245, 70%, 8%);
+  --accent-foreground: hsl(258, 88%, 53%);
+  --destructive: hsl(356, 91%, 54%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(210, 5%, 15%);
+  --input: hsl(208, 28%, 18%);
+  --ring: hsl(203, 89%, 53%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased text-foreground;
+    background: var(--twilight-900);
+    overflow-x: hidden;
+  }
+  
+  .font-cinzel {
+    font-family: var(--font-cinzel);
+  }
+  
+  .font-spectral {
+    font-family: var(--font-serif);
+  }
+}
+
+@layer components {
+  .glass-effect {
+    background: rgba(139, 125, 184, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(139, 125, 184, 0.2);
+  }
+  
+  .nft-card {
+    background: linear-gradient(135deg, rgba(139, 125, 184, 0.15) 0%, rgba(107, 70, 193, 0.1) 100%);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(139, 125, 184, 0.3);
+    transition: all 0.3s ease;
+  }
+  
+  .nft-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(139, 125, 184, 0.3);
+    border-color: rgba(139, 125, 184, 0.5);
+  }
+  
+  .moonbeam-glow {
+    box-shadow: 0 0 20px rgba(196, 196, 214, 0.3);
+  }
+  
+  .floating-particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  
+  .particle {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: rgba(196, 196, 214, 0.6);
+    border-radius: 50%;
+    animation: float 8s infinite linear;
+  }
+}
+
+@layer utilities {
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  
+  .animate-shimmer {
+    animation: shimmer 3s linear infinite;
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px rgba(139, 125, 184, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(139, 125, 184, 0.8);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
